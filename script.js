@@ -2,9 +2,17 @@
 // CONFIG
 // ============================================================
 // Point this at wherever your FastAPI app is running.
-const API_BASE_URL = "https://nyc-airbnb-room-type-predictor.onrender.com";
+
+// ============================================================
+// CONFIG
+// ============================================================
+// Empty base = call the same server that served this page.
+const API_BASE_URL = "";
 const PREDICT_ENDPOINT = `${API_BASE_URL}/predict`;
 const HEALTH_ENDPOINT = `${API_BASE_URL}/`;
+// const API_BASE_URL = "https://nyc-airbnb-room-type-predictor.onrender.com";
+// const PREDICT_ENDPOINT = `${API_BASE_URL}/predict`;
+// const HEALTH_ENDPOINT = `${API_BASE_URL}/`;
 
 const REDUCE_MOTION = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
